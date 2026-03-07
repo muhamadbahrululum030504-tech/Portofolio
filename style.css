@@ -1992,3 +1992,43 @@ background-clip:text;
 -webkit-text-fill-color:transparent;
 color:transparent;
 }
+
+.about-photo{
+position:relative;
+display:inline-flex;
+align-items:center;
+justify-content:center;
+width:260px;
+height:260px;
+margin:auto;
+}
+
+.about-photo img{
+width:220px;
+height:220px;
+border-radius:50%;
+border:4px solid #38bdf8;
+object-fit:cover;
+object-position:center;
+position:relative;
+z-index:2;
+}
+
+.photo-ring{
+position:absolute;
+width:260px;
+height:260px;
+border-radius:50%;
+border:2px dashed #38bdf8;
+animation:rotateRing 20s linear infinite;
+}
+
+.photo-glow{
+position:absolute;
+width:240px;
+height:240px;
+background:#38bdf8;
+border-radius:50%;
+filter:blur(90px);
+opacity:.25;
+}
